@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>603</width>
     <height>331</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QTableView" name="tableView">
+  <widget class="QTableWidget" name="tableWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>60</y>
-     <width>381</width>
-     <height>261</height>
+     <y>80</y>
+     <width>591</width>
+     <height>241</height>
     </rect>
    </property>
   </widget>
