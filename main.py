@@ -11,11 +11,11 @@ class MyWidget(QWidget):
         uic.loadUi('main.ui', self)
         self.con = sqlite3.connect("coffee.db")
         self.cur = self.con.cursor()
-        self.result = self.cur.execute("""SELECT * FROM Espresso""").fetchall()
+        self.result = self.cur.execute("""SELECT name, ground, description, price, volume FROM Espresso""").fetchall()
         self.select_data()
 
     def select_data(self):
-        self.tableWidget.setColumnCount(6)
+        self.tableWidget.setColumnCount(5)
         self.tableWidget.setRowCount(0)
         for i, row in enumerate(self.result):
             self.tableWidget.setRowCount(
